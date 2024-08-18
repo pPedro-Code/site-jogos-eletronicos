@@ -1,0 +1,29 @@
+@charset "UTG-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header > nav{
+    background-color: blue;
+}
+
+h1 {
+    text-align: center;
+}
+
+main h1{
+    padding: 100px;
+    background-color: antiquewhite;
+}
+
+h2 {
+    margin: 5px 80px;
+    padding: 100px;
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: blueviolet;
+}
