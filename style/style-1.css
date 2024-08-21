@@ -37,12 +37,22 @@
     margin: 0px 10px
 }
 
+
 .nav-link {
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.nav-link:hover {
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+} 
+
 
 .mobile-menu-icon { 
     display: none;
@@ -108,12 +118,6 @@ main .introdução{
     height: 500px;
     width: 100%;
 
-}
-
-.inf-menu {
-    text-align: center;
-    padding: 100%;
-    font-size: 100%;
 }
 
 h2 {
