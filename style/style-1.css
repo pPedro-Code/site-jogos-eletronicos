@@ -3,19 +3,107 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
 }
 
-header > nav{
-    background-color: blue;
+#nav-bar {
+    background-color: #6696FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
 }
 
-h1 {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #000;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0px 10px
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.mobile-menu-icon { 
+    display: none;
+}
+
+.mobile-menu { 
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-item {
+        display: none;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+}
+
+
+
+.introdução {
     text-align: center;
 }
 
-main h1{
+main .introdução{
     padding: 100px;
-    background-color: antiquewhite;
+    background-image: url(../images/fundo-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.inf-menu {
+    text-align: center;
+    padding: 5em;
+    font-size: 2em;
 }
 
 h2 {
