@@ -93,17 +93,27 @@
 }
 
 main .introdução{
-    padding: 100px;
+    height: 500px;
+    width: 100%;
     background-image: url(../images/fundo-1.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
+    color: #fff;
+    z-index: 1;
+}
+
+.introdução .conteúdo {
+    background: #0000008e;
+    height: 500px;
+    width: 100%;
+
 }
 
 .inf-menu {
     text-align: center;
-    padding: 5em;
-    font-size: 2em;
+    padding: 100%;
+    font-size: 100%;
 }
 
 h2 {
