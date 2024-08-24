@@ -1,13 +1,29 @@
 @charset "UTG-8";
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 :root {
-    --cor1: #6696FF;
+    /* paleta de cores */
+    --cor1: #2E4052;
+    --cor2: #beddfc;
+    --cor3: #9AC4F8;
+    --cor4: #F7C899;
+    --cor5: #CA2E55;
+    --opacidade: #0000008e;
 }
 
 * {
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background-color: var(--cor3);
 }
 
 /* menu/cabeçalho */
@@ -25,7 +41,7 @@
 }
 
 .logo h1 {
-    color: #000;
+    color: #fff;
 }
 
 .nav-list {
@@ -33,30 +49,30 @@
     align-items: center;
 }
 
-.nav-list ul {
+.nav-list > ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
 .nav-item {
-    margin: 0px 10px
+    margin: 0px 20px
 }
 
 
 .nav-link {
     text-decoration: none;
-    color: #000;
-    font-size: 1.5rem;
-    font-weight: 400;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400px;
 }
 
 .nav-link:hover {
-    color: #fff;
-    background-color: #000;
+    text-decoration: underline;
+    background-color: var(--cor5);
     padding: 5px;
     border-radius: 5px;
-    transition-duration: 0.5s;
+    transition-duration: 0.35s;
 } 
 
 
@@ -72,34 +88,6 @@
     .nav-item {
         display: none;
     }
-
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .open {
-        display: block;
-    }
 }
 
 /* topo */
@@ -110,28 +98,130 @@
 
 main .introdução{
     height: 500px;
-    width: 100%;
     background-image: url(../images/fundo-2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     color: #fff;
-    z-index: 1;
 }
 
 .introdução .conteúdo {
-    background: #0000008e;
+    background: var(--opacidade);
     height: 500px;
     width: 100%;
 
 }
 
+/* Conteúdo*/
+
+section {
+    background-color: var(--cor1);
+    display: grid;
+    place-items: center;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    color: #fff;
+}
+
+section h1 {
+    font-family: sans-serif;
+    font-size: 4em;
+}
+
+section p { 
+    width: 50vw;
+    margin: 15px;
+    font-size: 1.4em;
+    text-align: center;
+    
+}
+
+.introdução .conteúdo h1{
+    font-size: 112px;
+    padding-top: 10%;
+}
+
+main h1, h2 {
+    font-family: "jersey 10";
+    color: #fff;
+}
+
+main h2 {
+   font-size: 93px; 
+}
+
 h2 {
-    margin: 5px 80px;
+    margin-bottom: 5px;
     padding: 100px;
-    background-color: aquamarine;
+}
+
+.historia {
+    background: var(--opacidade) url(../images/background-historia-1000.jpg) no-repeat center left;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+}
+
+.publico {
+    text-align: right;
+    background: var(--opacidade) url(../images/background-publico.jpg) no-repeat center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+}
+
+.bem-mal {
+    background: var(--opacidade) url(../images/background-bem-mal.jpg) no-repeat center left;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+}
+
+.economia {
+    text-align: right;
+    background: var(--opacidade) url(../images/background-economia.png) no-repeat center bottom;
+    background-size: cover;
+    background-blend-mode: darken;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+/* footer  */
+
+hr {
+    color: var(--cor4)
+}
+
+.ref-bibliografica {
+    padding: 2em;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+.ref-bibliografica h1 {
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.ref-bibliografica ul {
+    column-count: 3;
+    text-align: justify;
+}
+
+.ref {
+    margin: 0px 0.9em 2em 2em;
 }
 
 footer {
-    background-color: blueviolet;
+    background-color: var(--cor1);
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: #fff;
 }
