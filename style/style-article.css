@@ -3,7 +3,7 @@
 :root {
     --cor1: #2E4052;
     --cor2: #121920;
-    --cor3: #204d85;
+    --cor3: #000;
     --cor4: #F7C899;
     --cor5: #CA2E55;
 }
@@ -12,10 +12,58 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;;
+    
+}
+
+article {
+    margin: 0px 100px ;
 }
 
 a {
     text-decoration: none;
+}
+
+h1 {
+    border-bottom: 1px solid #000000;
+    margin: 20px 0px;
+    padding: 5px;
+    font-weight: 550;
+    color: #011c38;
+    align-items: normal;
+}
+
+.teste-sim {
+    
+}
+
+figure {
+    background-color: #dfedfa;
+    width: 350px;
+    padding: 5px;
+    margin: 10px 10px;
+    border: .1px #000000 solid;
+    float: left;
+}
+
+figure img {
+    width: 350px;
+}
+
+figure p {
+    width: 350px;
+    padding-top: 5px;
+}
+
+h2 {
+    margin: 20px 20px 20px 0px;
+    padding: 5px;
+    font-weight: 550;
+    color: #011c38;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .outra-pág {
