@@ -126,14 +126,14 @@ section {
 section h1 {
     font-size: 5em;
     color: var(--cor1);
+    text-align: center;
 }
 
 section p { 
-    width: 50vw;
+    width: 65vw;
     margin: 15px;
     font-size: 1.4em;
-    text-align: center;
-    
+    text-align: justify;
 }
 
 .introdução .conteúdo h1{
@@ -150,9 +150,14 @@ main h2 {
    font-size: 93px; 
 }
 
-h2 {
-    margin: 30px 0px;
-    padding: 100px;
+.textos-âncoras h2 {
+    padding: 100px 100px;
+    transition: padding .8s ease;
+    margin: 20px;
+}
+
+.centraliza-texto:hover {
+    padding-left: 500px;
 }
 
 .historia {
@@ -163,7 +168,6 @@ h2 {
 }
 
 .publico {
-    text-align: right;
     background: var(--opacidade) url(../images/background-publico.jpg) no-repeat center center;
     background-size: cover;
     background-blend-mode: darken;
@@ -178,12 +182,14 @@ h2 {
 }
 
 .economia {
-    text-align: right;
     background: var(--opacidade) url(../images/background-economia.png) no-repeat center bottom;
     background-size: cover;
     background-blend-mode: darken;
     position: relative;
-    margin-bottom: 0px;
+}
+
+.economia > h2 {
+    margin: 0px;
 }
 
 /* footer  */
