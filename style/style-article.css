@@ -11,8 +11,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;; 
 }
 
 article {
@@ -32,17 +31,26 @@ h1 {
     align-items: normal;
 }
 
-.teste-sim {
-    
-}
-
 figure {
     background-color: #dfedfa;
     width: 350px;
     padding: 5px;
     margin: 10px 10px;
     border: .1px #000000 solid;
-    float: left;
+}
+
+@media (min-width: 750px) {
+    .center-right {
+        float: right;
+    }
+
+    .center-left {
+        float: left;
+    }
+}
+
+article p {
+    padding: 0px 0px;
 }
 
 figure img {
@@ -89,4 +97,69 @@ p {
     color: #fff;
     background-color: var(--cor5);
     transition-duration: .5s;
+}
+
+.ref-bibliografica {
+    padding: 2em;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+.ref-bibliografica h1 {
+    text-align: center;
+    padding: 50px;
+    color: var(--cor4);
+    border-top: var(--cor4) .1px solid;
+    border-color: var(--cor4);
+}
+
+
+.ref-bibliografica ul {
+    column-count: 3;
+    text-align: justify;
+}
+
+.ref {
+    margin: 0px 0.9em 2em 2em;
+}
+
+@media (max-width: 750px) {
+    article {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1, h2 { 
+        text-align: center;
+    }
+
+    figure {
+        margin: auto;
+    }
+    
+    p {
+        margin: 10px 40px;
+    }
+
+    figure p {
+        margin: 0px;
+    }
+
+    .outra-pág {
+        padding: 5px;
+    }
+    
+    .outra-pág a { 
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 20px;
+        width: 70px;
+        margin: 20px 6vw;
+    }
+
+    .ref-bibliografica ul {
+        column-count: 2;
+        font-size: 14px;
+    }
+
 }
