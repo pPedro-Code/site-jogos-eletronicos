@@ -90,7 +90,7 @@ p {
     color: var(--cor5);
     padding: 20px;
     width: 200px;
-    margin: 20px 10vw;
+    margin: 20px 9vw;
 }
 
 .outra-pág a:hover {
@@ -130,6 +130,7 @@ p {
     }
 
     h1, h2 { 
+        margin: 30px;
         text-align: center;
     }
 

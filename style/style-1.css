@@ -135,6 +135,44 @@ main h2 {
     position: relative;
 }
 
+.projetos-anteriores-gerais p{
+    text-align: center;
+    margin: 20px;
+}
+
+.projeto-anterior {
+    display: flex;
+    margin-top: 75px;
+}
+
+.projeto-anterior img {
+    width: 44vw;
+    padding: 0px 20px;
+    border-right: 2px var(--cor1) solid;
+}
+
+.projeto-anterior > p {
+    width: 40vw;
+}
+
+.projetos-anteriores-gerais a {
+    margin: 20px;
+    font-size: 1.2em;
+    border-style: solid;
+    border-radius: 5px;
+    text-align: center;
+    border-color: var(--cor1);
+    color: var(--cor1);
+    padding: 10px;
+    margin: 20px 10vw;
+}
+
+.projetos-anteriores-gerais a:hover {
+    color: var(--cor4);
+    background-color: var(--cor1);
+    transition-duration: .5s;
+}
+
 /* footer  */
 footer {
     background-color: var(--cor1);
@@ -167,5 +205,20 @@ footer a {
     .centraliza-texto-l:hover, .centraliza-texto-r:hover {
         color: #F7C899;
         transition: color .5s;
+    }
+
+    .projeto-anterior {
+        display: block;
+        margin-top: 75px;
+    }
+    
+    .projeto-anterior img {
+        width: 80vw;
+        border: 0px;
+    }
+    
+    .projeto-anterior > p {
+        width: 80vw;
+        margin: auto;
     }
 }
