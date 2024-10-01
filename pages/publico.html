@@ -9,34 +9,40 @@
     <title>Público Alvo dos Jogos Eletrônicos</title>
 </head>
 <body>
+    <!--Menu-->
     <header>
-        <nav id="nav-bar">
-            <div class="logo">
-                <h1>ETEC</h1>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a>
-                </ul>
-            </div>
+        <div class="logo">
+            <a href="https://etectm.com/" target="_blank"><img src="../images/logo-etectm.png" alt=""></a>
+        </div>
+        <button id="toggle-nav">&times;</button>
+        <nav id="nav">
         
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
-            </div>
-            <div class="mobile-menu">
-                <ul>
-                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a>
-                </ul>
-            </div>
+            <div id="nav-links"></div>
         </nav>
-    </header>
+        <div class="menu-button" id="menuButton">&equiv;</div>
+        <div class="sidebar" id="sidebar">
+            <button class="close-button" id="closeButton">&times;</button>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html#sobre">SOBRE</a></li>
+                <li>
+                    <a href="#" id="link2">ARTIGOS</a>
+                    <ul class="sublinks" id="sublinks">
+                        <li><a href="historia.html">- História</a></li>
+                        <li><a href="publico.html">- Público</a></li>
+                        <li><a href="bem-mal.html">- Bem-mal</a></li>
+                        <li><a href="economia.html">- Econômia</a></li>
         
+                    </ul>
+                </li>
+                <li><a href="../index.html#projetos-anteriores-gerais">PROJETOS ANTERIORES</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Fim menu-->    
     <article>
-        <h1>Lorem ipsum</h1>
+        <h1>Lorem      !@#@!$%¨& ipsum</h1>
         
         <figure class="center-right">
             <img src="../images/background-historia.jpg" alt="">
@@ -76,7 +82,7 @@
         <a href="bem-mal.html">Próxima</a>
         </div>
         <div class="ref-bibliografica">
-            <h1>Referências bibliográficas:</h1>
+            <h1>Referências Bibliográficas</h1>
             <ul>
                 <li class="ref">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
                 <li class="ref">Dicta officiis obcaecati unde cum possimus ab nam et! </li>
@@ -92,5 +98,6 @@
             </ul>
         </div>
     </footer>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

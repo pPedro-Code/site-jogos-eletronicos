@@ -135,7 +135,7 @@ main h2 {
     position: relative;
 }
 
-.projetos-anteriores-gerais p{
+#projetos-anteriores-gerais p{
     text-align: center;
     margin: 20px;
 }
@@ -155,7 +155,7 @@ main h2 {
     width: 40vw;
 }
 
-.projetos-anteriores-gerais a {
+#projetos-anteriores-gerais a {
     margin: 20px;
     font-size: 1.2em;
     border-style: solid;
@@ -167,7 +167,7 @@ main h2 {
     margin: 20px 10vw;
 }
 
-.projetos-anteriores-gerais a:hover {
+#projetos-anteriores-gerais a:hover {
     color: var(--cor4);
     background-color: var(--cor1);
     transition-duration: .5s;
