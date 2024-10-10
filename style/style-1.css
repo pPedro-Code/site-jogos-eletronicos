@@ -221,4 +221,8 @@ footer a {
         width: 80vw;
         margin: auto;
     }
+
+    .textos-âncoras h2{
+        size: 70px;
+    }
 }
